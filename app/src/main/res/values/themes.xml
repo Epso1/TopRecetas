@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TopRecetas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="Theme.TopRecetas" parent="Base.Theme.TopRecetas">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+
+    </style>
+
+
+    <style name="AppBarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/genty_sans_regular</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="DrawerItemStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/mulled_wine_season_medium</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+<!--  Definir el estilo de los colores del FAB  -->
+    <style name="Widget.AppCompat.FloatingActionButton" parent="Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="maxImageSize">50dp</item>
+    </style>
+
+
+</resources>

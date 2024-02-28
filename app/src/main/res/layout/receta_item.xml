@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvReceta"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="16dp"
+    android:background="@color/colorPrimaryDark"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- FloatingActionButton con el icono de favorito -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabFavorito"
+            style="@style/Widget.AppCompat.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_star_24"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/ivReceta"
+            app:layout_constraintTop_toTopOf="@id/ivReceta"
+            app:maxImageSize="50dp"
+            app:rippleColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivReceta"
+            style="@style/Widget.AppCompat.FloatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tarta_tres_chocolates"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@id/tvNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/mulled_wine_season_medium"
+            android:gravity="center"
+            android:padding="8dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="-3"
+            android:shadowDy="-3"
+            android:shadowRadius="3"
+            android:text="Tarta tres chocolates"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivReceta" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

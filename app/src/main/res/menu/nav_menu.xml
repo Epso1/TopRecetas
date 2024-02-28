@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:title="Inicio"
+        android:icon="@drawable/casa"
+        />
+    <item
+        android:id="@+id/nav_categorias"
+        android:title="Buscar por categoría"
+        android:icon="@drawable/categoria"
+        />
+    <item
+        android:id="@+id/nav_ingrediente"
+        android:title="Buscar por ingrediente"
+        android:icon="@drawable/vegetales"
+        />
+
+    <item
+        android:id="@+id/nav_favoritos"
+        android:title="Recetas favoritas"
+        android:icon="@drawable/estrella"
+
+        />
+
+    <item
+        android:id="@+id/nav_todas"
+        android:title="Todas las recetas"
+        android:icon="@drawable/lista"
+        />
+</menu>
